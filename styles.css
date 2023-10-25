@@ -1,0 +1,184 @@
+/************************************************************************************************************************************************
+************************************************************************************************************************************************
+************************************************************************
+
+Filename: Assignment-6
+Author: Aditya Suthar
+Date: 2023-10-24
+Copyright: 2023 - All rights reserved
+
+************************************************************************************************************************************************
+************************************************************************************************************************************************
+************************************************************************/
+
+
+/**********************************************************************
+**********************************************************************
+
+==================
+Table of Contents
+==================
+1. HTML Body Styles
+2. Heading Styles
+3. Form Container Styles
+4. Form styles
+5. Label styles
+6. Input and textarea styles
+
+==================
+Colours
+==================
+1. #f0f0f0
+2. rgb(0, 0, 0)
+3. #fff
+4. #ccc
+5. #F79F79
+6. #F7D08A
+7. #87B6A7
+8. #E3F09B
+
+
+
+
+**********************************************************************
+**********************************************************************/
+
+/****************************  MAIN STYLES  ***********************************/
+
+/**********************
+1. HTML Body Styles
+**********************/
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    background-color: #f0f0f0; 
+}
+/**********************
+2. Header Styles
+**********************/
+
+header {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    color: rgb(0, 0, 0); 
+    height: 80px; 
+}
+
+
+
+/**********************
+3. Form Container Styles
+**********************/
+
+.form-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    max-width: auto;
+    width: 80%;
+   margin-left: 50px;
+    
+}
+/**********************
+4.  Form styles
+**********************/
+
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/**********************
+5. Label styles
+**********************/
+
+
+label {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+}
+/**********************
+6.  input and textarea styles
+**********************/
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+
+/****************************  MEDIA STYLES - min-width - 601px  ***********************************/
+
+@media (min-width: 601px) {
+    .form-group {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+    Body{
+        background-color: #F79F79;
+    }
+    
+    label {
+        width: 100%; 
+    }
+
+    input, textarea {
+        width: 45%; 
+    }
+    .form-button {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .form-container {
+        border: 1px solid #ccc;
+        padding: 20px;
+        background-color: #F7D08A;
+        max-width: auto;
+        width: 74%;
+       margin-left: 100px;
+       
+      
+        
+    }
+}
+
+/****************************  MEDIA STYLES - max-width - 600px  ***********************************/
+
+
+@media (max-width: 600px) {
+    body {
+        background-color: #87B6A7; 
+    }
+    .form-container {
+        max-width: 100%; 
+        border: none; 
+        background-color: #E3F09B;
+    }
+    label {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    input, textarea {
+        width: 100%; 
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .form-group {
+        flex-direction: column; 
+    }
+    #checkbox {
+        width: auto; 
+    }
+}
