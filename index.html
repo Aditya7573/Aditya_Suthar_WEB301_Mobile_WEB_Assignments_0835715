@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script src="validate.js"></script>
+    <title>Three-Part Form</title>
+</head>
+<body>
+    <header>
+        <h1>Aditya Suthar</h1>
+    </header>
+    <div class="form-container">
+        <form>
+           
+        
+                <!-- Personal Information Section -->
+           
+                    <h2>Personal Information</h2>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        
+                        <label>Gender:</label>
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female" required>
+                        <label for="female">Female</label>
+                    </div>
+                    
+             
+
+                <!-- Contact Information Section -->
+              
+                
+                    <h2>Contact Information</h2>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            oninvalid="this.setCustomValidity('Please enter a valid email address.')" oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}"
+                            oninvalid="this.setCustomValidity('Please enter a valid 10-digit phone number.')" oninput="this.setCustomValidity('')">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+                
+
+                <!-- Payment Information Section -->
+         
+             
+                    <h2>Payment Information</h2>
+                    <div class="form-group">
+                        <label for="creditCard">Credit Card Number:</label>
+                        <input type="text" id="creditCard" name="creditCard" required pattern="^\d{10}$"
+                            title="Please enter a valid 10-digit credit card number.">
+                    </div>
+                    <div class="form-group">
+                        <label for="expiration">Expiration Date:</label>
+                        <input type="date" id="expiration" name="expiration" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" required pattern="^\d{3}$"
+                            title="Please enter a valid 3-digit CVV number.">
+                    </div>
+                </div>
+            </div>
+            <!-- Add pagination navigation -->
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <div id="errorMessages"></div>
+</body>
+</html>
