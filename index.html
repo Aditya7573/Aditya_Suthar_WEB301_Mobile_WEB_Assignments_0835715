@@ -1,0 +1,163 @@
+<!--
+    Name: Aditya Suthar
+    Stident : 0835715
+    Assignment - 9
+    Date : 17-Nov-2023
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Aditya's Shop</title>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Aditya's Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto"> <!-- Changed from "mr-auto" to "ml-auto" -->
+            <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Category 1</a>
+                    <a class="dropdown-item" href="#">Category 2</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<br>
+<!-- Header -->
+<header class="bg-danger text-white text-center py-3">
+    <h1>Aditya</h1>
+</header>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <br>
+                <h2 class="section-heading text-uppercase bg-danger text-white text-center py-7">About</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+                    <a class="navbar-brand" href="#"></a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading1">First</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+                    <h4 id="scrollspyHeading1">Zara</h4>
+                    <p>Zara was started by Amancio Ortega in 1975. His first shop was in central A Coruña, 
+                        in Galicia, Spain, where the company is still based. He initially called it 'Zorba'
+                         after the classic 1964 film Zorba the Greek, but after learning there was a bar with
+                          the same name two blocks away, he rearranged the letters to read 'Zara'. It is believed 
+                          the extra 'a' came from an additional set of letters that had been made for the company.
+                          [6][7] It sold low-priced lookalike products of popular, higher-end clothing fashions. 
+                          He subsequently opened more shops in Spain. During the 1980s, he changed the design, 
+                          manufacturing, and distribution process to reduce lead times and react more quickly 
+                          to new trends – what he called "instant fashions" – using information technology and 
+                          groups of designers rather than individuals.</p>
+                    <h4 id="scrollspyHeading2">History</h4>
+                    <p>Zara introduced the use of RFID technology in its stores in 2014. The RFID chips are located in
+                         the security tags which are removed from clothing when purchased and can be reused. The chip 
+                         allows the company to quickly take inventory by detecting radio signals from the RFID tags. When 
+                         an item is sold, the stockroom is immediately notified so that the item can be replaced. An item
+                          that is not on the shelf can easily be found with the RFID tag.[41]In 2015, Zara was ranked #30
+                           on Interbrand's list of best global brands.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Products Section -->
+<section id="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <br>
+                <h2 class="section-heading text-uppercase bg-danger text-white text-center py-5">Our Products</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Product Cards -->
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="product1.jpg" alt="Product 1">
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Product 1</h4>
+                        <p class="card-text">Details about Product 1.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="product1.jpg" alt="Product 1">
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Product 2</h4>
+                        <p class="card-text">Details about Product 2.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="product1.jpg" alt="Product 1">
+                    
+                    <div class="card-body">
+                        <h4 class="card-title">Product 3</h4>
+                        <p class="card-text">Details about Product 3.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the above block for other products -->
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS and Popper.js (Optional, for Bootstrap features) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
